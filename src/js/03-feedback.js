@@ -24,7 +24,9 @@ function addMessage(event) {
 };
 
 
-(function currentInputLocalStorage() {
+currentInputLocalStorage();
+
+function currentInputLocalStorage() {
   const currentInput = JSON.parse(localStorage.getItem('feedback-form-state'));
   const email = document.querySelector('.feedback-form input');
   const message = document.querySelector('.feedback-form textarea');
@@ -32,5 +34,4 @@ function addMessage(event) {
         email.value = currentInput.email;
     message.value = currentInput.message;
     };
-
-})();
+};
