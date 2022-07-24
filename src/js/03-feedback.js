@@ -8,7 +8,7 @@ formEl.addEventListener('submit', addMessage);
 const formData = {};
 
 function addInput(event) {
-   formData[event.target.name] = event.target.value;
+  formData[event.target.name] = event.target.value;
   localStorage.setItem("feedback-form-state", JSON.stringify(formData));
   
 };
