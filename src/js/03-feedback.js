@@ -7,13 +7,13 @@ formEl.addEventListener('submit', addMessage);
 const formData = {email, message};
 
 function addInput(event) {
-  const emailEl = email.value;
+  const emailEl = emailEl.value;
   
   localStorage.setItem("feedback-form-state", emailEl);
 }
 
 function addMessage(event) {
-  const messageEl = message.value;
+  const messageEl = messageEl.value;
   localStorage.setItem("feedback-form-state", messageEl);
 }
 
